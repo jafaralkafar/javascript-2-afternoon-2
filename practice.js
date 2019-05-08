@@ -18,6 +18,9 @@ var arr = [10,20,30];
 */
 
 //Code Here
+function first(arr) {
+  return arr[0]
+}
 
 
 
@@ -33,6 +36,10 @@ var arr = [40,50,60];
 */
 
 //Code Here
+function last(arr) {
+  let lastArr = arr.pop()
+  return lastArr
+}
 
 
 
@@ -48,6 +55,11 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 */
 
 //Code Here
+function looper(family) {
+  for (i=0; i <family.length; i++) {
+    alert(family[i])
+  }
+}
 
 
 
@@ -63,7 +75,13 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+function reversedLooper(letters) {
+  let reversed = []
+  for (let i=letters.length-1; i>=0; i--) {
+    reversed.push(letters[i])
+    alert(letters[i])
+  }
+} 
 
 
 ////////// PROBLEM 5 //////////
@@ -78,6 +96,16 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 */
 
 //Code Here
+function evenFinder(nums) {
+  let evenNums=[]
+  for (let i=0; i < nums.length; i++) {
+    
+    if (nums[i] % 2 === 0) {
+      evenNums.push(nums[i])
+    }
+  }
+  return evenNums
+}
 
 
 
@@ -107,6 +135,17 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
+function divider(numbersArray) {
+  let dividedArray = [[], []]
+  for (i=0; i<numbersArray.length; i++) {
+    if (numbersArray[i] % 2 === 0) {
+      dividedArray[0].push(numbersArray[i])
+    } else {
+      dividedArray[1].push(numbersArray[i])
+    }
+  }
+  return dividedArray
+}
 
 
 
@@ -129,6 +168,19 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
+function finder(array) {
+  let randomNumber = getRandomArbitrary()
+  for (let i=0; i <= array.length; i++) {
+    
+    if (array[i] === randomNumber) {
+      return true
+    }
+
+  }
+  return false
+  
+}
+
 
 
 
@@ -158,7 +210,26 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
+// function removeItem(myGroceryList, item) {
+//   for (let i=0; i <= myGroceryList.length; i++) {
+//     if (!myGroceryList) {
+//       return myGroceryList = []
+//     }
+//     if (item === myGroceryList[i]) {
+//       return myGroceryList.splice(i, 1)
+//     }
+    
+//   }
+// }
 
+// function addItem(myGroceryList, item) {
+  
+//   if (!myGroceryList) {
+//     return myGroceryList = []
+//   }
+    
+//   return myGroceryList.push(item)
+// }
 
 
 ////////// PROBLEM 9 //////////
@@ -184,6 +255,15 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
+function addTen(numbers) {
+  let addedNumbers = []
+  for (let i = 0; i <= numbers.length; i++) {
+    console.log(numbers)
+    addedNumbers.push(numbers[i] + 10)
+    console.log(addedNumbers)
+  }
+   
+}
 
 
 
